@@ -1,0 +1,15 @@
+-- git commands for email configuration
+
+git config --global user.name "<Enter your user name>"
+git config --global user.email "<Enter your github email>"
+
+git add . for adding files to stage
+git commit -m "write your message here"
+git push
+git clone "url of the repository"
+
+--what is an operating system?
+
+--What is kernel?
+
+--What is the importance of kernel?
