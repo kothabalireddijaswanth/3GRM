@@ -1,0 +1,46 @@
+Problem 1:
+	warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+     exit(0);
+     ^~~~
+     
+Solution 1:
+	ImplimentationOfStack.c:37:5: warning: incompatible implicit declaration of built-in function ‘exit’
+	ImplimentationOfStack.c:37:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+
+ Problem 2:    
+     
+	ImplimentationOfStack.c:41:10: error: expected expression before ‘)’ token
+	return();
+          ^
+	ImplimentationOfStack.c:41:9: warning: ‘return’ with a value, in function returning void
+	return();
+         ^
+	ImplimentationOfStack.c:12:6: note: declared here
+	void main()
+
+Solution 2:return 0;           int main()
+
+
+Probelm 3:
+
+	ImplimentationOfStack.c: In function ‘push’:
+	ImplimentationOfStack.c:47:6: error: ‘top’ undeclared (first use in this function); did you mean ‘pop’?
+	  if( top==SIZE-1)
+		  ^~~
+		  pop
+	ImplimentationOfStack.c:47:6: note: each undeclared identifier is reported only once for each function it appears in
+	ImplimentationOfStack.c: In function ‘pop’:
+	ImplimentationOfStack.c:61:5: error: ‘top’ undeclared (first use in this function); did you mean ‘pop’?
+	  if(top==-1)
+		 ^~~
+		 pop
+	ImplimentationOfStack.c: In function ‘display’:
+	ImplimentationOfStack.c:73:6: error: ‘top’ undeclared (first use in this function); did you mean ‘pop’?
+	  if( top == -1)
+		  ^~~
+		  pop
+
+
+Solution 3: == is used for comparession , = is used for intilizing
+
+
