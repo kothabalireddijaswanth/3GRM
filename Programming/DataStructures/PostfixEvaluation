@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <conio.h>
+#define SIZE 50
+
+char s[SIZE];
+int top=-1;
+void push(char element)
+{
+	s[++top]=element;
+	}
+	char(pop)
+	{
+	return(s[top--]=element;
+	}
+	int cal(int element 1,char op, int element2);
+	{
+	switch(op)
+	{
+		case '+' : return(element1 + element2)
+		case '-' : return(element1 - element2)
+		case '*' : return(element1 * element2)
+		case '\' : return(element1 \ element2)
+	}
+}
+
+void main()
+{
+	char postfix[50],ch;
+	int opnd 1 , opnd 2 , value , i=0;
+	clrscr();
+	printf("enter the postfiux expression ");
+	scanf("%s",postfix);
+	while((ch=postfix[i++]!='\0'))
+	{
+		if(isdigit(ch))
+		{
+			char=postfix[i-1]-'0';
+			push(ch);
+		}
+		else
+			{
+			opnd2 = pop();'
+			opnd1 = pop();
+			val = cal(opnd1 , ch , opnd2);
+			push(val);
+			}
+		}
+		val = pop();
+		printf("the result of postfix expression evaluation is %d",val);
+		getch();
+	}
+					
