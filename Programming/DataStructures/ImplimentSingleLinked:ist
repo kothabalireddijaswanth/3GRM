@@ -1,0 +1,107 @@
+#include<stdio.h>
+#include<conio.h>
+struct node
+{
+	int i;
+	struct node next;
+};
+void main()
+{
+	struct node * first;
+	struct node * last;
+	struct node * temp;
+	int ch,opt,add,nt=0,t=0;
+	struct node *p;
+	clrscr();
+	while(1)
+	{
+		printf("\n 1.creation \n 2. insert at starting \n 3.insert at middle \n 4.insert at end \n 5.delete first node \n 6. delete last node \n 7.delete middle node\n 8.traverse\n 9.exit \n");
+		printf("%d",&opt);
+		switch(opt)
+		{
+			case 1:printf("\n enter the data");
+				first=(struct node*)malloc(size of(struct node));
+				scanf("%d"&ch);
+				first->=ch;
+				first->next=0;
+				p=first;
+				cnt=1;
+				break;
+			case 2:p=(struct node*)malloc(size of(struct node));
+				printf("%d"&opt->i);
+				p->next=first;
+				first=p;
+				cnt++;
+				break;
+			case 3:printf("\n\t enter any position between 1 and %d",cnt);
+				scanf("%d",&add);
+				t=1;
+				p=first;
+				while(t!=add)
+		}
+			p=p->next;
+			t++;
+		}
+		temp=(struct name*)malloc(size of(struct node));
+		printf("\n\t enter data for node");
+		scanf("%d"&temp->i);
+		temp->next=p->next;
+		p->next=temp;
+		cnt++;
+		break;
+		case 4:p=(struct node*)malloc(size of(struct node));
+			printf("\n\t enter data for last data");
+			scanf("%d"&p->i);
+			temp=first;
+			while(temp->next!=0)
+			{
+				temp=temp->next
+			}
+			temp->next=p;
+			p->next=0;
+			cnt++;
+			break;
+		case 5:p=first;
+			first=p->next;
+			free(p);
+			cnt--;
+			break;
+		case 6:p=first
+			while(p->next->next!=0)
+			{
+			p=p->next;
+			}
+			free(p->next->next);
+			cnt--;
+			break;
+		case 7:printf("\n\t enter any position between %d,cnt");
+			scanf("%d",&add);
+			t=1;
+			p=first;
+			while(t<add-1)
+			{
+			p=p->nwxt
+			t++;
+			}
+			temp=p->next;
+			p->=temp->next;
+			free(temp);
+			cnt--;
+			break;
+		case 8:p=first;
+			while(p!=0)
+			{
+			printf("\n\t%d",p->i);
+			p=p->next;
+			break;
+		case 9:exit(0)
+			break;
+		default:printf("invalid choice");
+		}
+	}
+getch();
+}
+
+		
+				
+		
