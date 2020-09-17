@@ -1,0 +1,7 @@
+import re
+data=input("dear user please enter your data :")
+word=input("which word you want to search :")
+search=re.compile(word)
+matches=search.finditer(data)
+for i in matches:
+  print(i)
