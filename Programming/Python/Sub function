@@ -1,0 +1,6 @@
+import re
+data=input("dear user please enter your data :")
+old=input("please enter the old value :")
+new=input("please enter the new value :")
+string=re.sub(old,new,data)
+print(string)
