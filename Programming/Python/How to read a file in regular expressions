@@ -1,0 +1,9 @@
+import re
+search=re.compile("jaswanth")
+f=open("jaswanth.txt","r")
+data=f.read()
+count=0
+matches=search.finditer(data)
+for i in matches:
+  count+=1
+  print(matches)
