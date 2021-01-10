@@ -1,0 +1,11 @@
+import package1.ao_module
+import package1.string_module
+a=int(input('please enter first integer '))
+b=int(input('please enter second integer '))
+print('Addition result is ',package1.ao_module.addition(a,b))
+print('Subtraction result is ',package1.ao_module.subtraction(a,b))
+print('Multiplication result is ',package1.ao_module.multiplication(a,b))
+string1=input('please enter string1 ')
+string2=input('please enter string2 ')
+package1.string_module.string_concatenation(string1,string2)
+package1.string_module.string_length(string1,string2)
