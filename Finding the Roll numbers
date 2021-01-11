@@ -1,0 +1,7 @@
+Roll_numbers='AB1122','BC2233','CD3344','DE4455','EF5566'
+numbers=input("Dear user, Please enter your Roll Number:")
+if numbers in Roll numbers:
+ print("Dear User, Your Roll Number is existed")
+else:
+ print("Dear User, Your Roll Number is not existed")
+    
