@@ -1,0 +1,5 @@
+import re
+search=re.compile("jaswanth")
+matches=search.finditer("jaswanth studied at svcet jaswanth belongs to ECE department jaswanth makes others to happy")
+for i in matches:
+  print(i)
