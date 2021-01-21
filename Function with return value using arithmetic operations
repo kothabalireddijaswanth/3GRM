@@ -1,0 +1,9 @@
+a=10 
+b=20 
+def ao (a,b):
+  c=a+b
+  d=a-b
+  e=a*b
+  f=a/b
+  g=a//b
+  return c,d,e,f,g
