@@ -1,0 +1,5 @@
+m=int(input("dear user please enter the initial value ))
+n=int(input("dear user please enter the end value "))
+for i in range(m,n+1):
+    if i%2==0:
+        Print("even numbers are :",i)
