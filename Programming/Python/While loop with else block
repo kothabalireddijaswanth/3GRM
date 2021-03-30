@@ -1,0 +1,11 @@
+PINs=1122, 2233, 3344, 4455, 5566, 6677, 7788, 8899, 9900
+i=1
+while i<=3: 
+ PIN=int(input('please enter your ATM pin number '))
+ if PIN in PINs:
+ print('Dear customer your ATM pin is valid. Do the transactions')
+ break
+ i+=1 
+else:
+ print('Dear customer, wrong PIN is entered continuously for three times. So, 
+your account is blocked. Please contact your bank')
